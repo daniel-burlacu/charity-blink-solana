@@ -1,7 +1,5 @@
 # 🐾 charity-blink-solana 🐾
 
-### Logic: 
-
 ### Program:
 * 📝 **Initialize**: A Solana program is set up once by setting a **due date** for the charity. This is a **one-time function**—once initialized, it’s done!
 * 🛑 **Immutable Settings**: After initialization, the due date and charity wallet **cannot be changed**.
