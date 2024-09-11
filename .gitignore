@@ -4,6 +4,7 @@
 /charity_contract/node_modules/
 /charity_contract/target/
 /charity-frontend/.anchor/
+/api-actions-basiscs/node_modules/
 
 /.pnp
 .pnp.js
