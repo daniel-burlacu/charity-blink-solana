@@ -1,0 +1,28 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/charity_contract/node_modules/
+/charity_contract/target/
+/charity-frontend/.anchor/
+
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Ignore build artifacts created by Rust
+**/*.rs.bk
+*.rlib
+*.d
+*.o
+*.so
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.iml
+
+# Ignore Cargo.lock if it's not necessary to track (optional)
+Cargo.lock
+
+# Ignore any DS_Store files from macOS
+.DS_Store
