@@ -5,9 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    // HMR is enabled by default, but you can customize it if needed
-    hmr: {
-      protocol: 'ws', // Uses WebSocket by default
-    },
+    open: true, // automatically open the app in the browser
   },
 })
