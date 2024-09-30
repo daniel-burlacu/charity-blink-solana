@@ -5,25 +5,25 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-charity_contract = "9kqZ3ma4VY6Kmj7vgb1qPiLDoxb46zM5eEm1rsQZTG9L"
-
-## [registry]
-## url = "https://api.apr.dev"
+charity_contract = "6cCF1c3Q3Rx92ECJYQj3QZMG9rfgydjfUd6jkFD8VTEF"
 
 [registry]
-url = "http://localhost:3000"
-
-## [provider]
-## cluster = "Devnet"
-## wallet = "~/.solana/.config/localwallet.json"
+url = "https://api.apr.dev"
+## url = "http://localhost:3000"
 
 [provider]
-cluster = "http://127.0.0.1:8898"  # Match the RPC URL of the test validator
+cluster = "Devnet"
+##cluster = "http://127.0.0.1:8898"  # Match the RPC URL of the test validator
 wallet = "~/.solana/.config/localwallet.json"
 
-# Specify WebSocket URL explicitly
+## Specify WebSocket URL explicitly
 [websocket]
-url = "ws://127.0.0.1:8898"
+## url = "ws://127.0.0.1:8898"
+url = "wss://api.devnet.solana.com"  
+
+## [scripts]
+## test = "yarn run ts-mocha \"-p\" ./tsconfig.json -t 1000000 tests/**/*.ts"
 
 [scripts]
-test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+

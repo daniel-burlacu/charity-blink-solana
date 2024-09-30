@@ -9,12 +9,14 @@ crate-type = ["cdylib", "lib"]
 name = "charity_contract"
 
 [features]
-default = []
 cpi = ["no-entrypoint"]
 no-entrypoint = []
 no-idl = []
 no-log-ix-name = []
 idl-build = ["anchor-lang/idl-build"]
+default = []
 
 [dependencies]
 anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"    # Add this for anchor SPL token support
+mpl-token-metadata = "1.2.1"  # Add this for Metaplex Token Metadata program
